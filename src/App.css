@@ -1,38 +1,61 @@
-.App {
+body {
+  background-color: #000;
+  color: #0ff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1, h3 {
   text-align: center;
+  text-shadow: 0 0 10px #0ff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 15px;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.task-card {
+  background-color: #111;
+  border: 1px solid #0ff;
+  border-radius: 12px;
+  padding: 15px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.task-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+}
+
+button {
+  background-color: #0ff;
+  color: black;
+  border: none;
+  padding: 8px 12px;
+  margin: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #08f;
   color: white;
+  box-shadow: 0 0 10px #0ff;
 }
 
-.App-link {
-  color: #61dafb;
+form input, form select {
+  background-color: #111;
+  border: 1px solid #0ff;
+  color: #0ff;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form input::placeholder {
+  color: #0ff;
 }
