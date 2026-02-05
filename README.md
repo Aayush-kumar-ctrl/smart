@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+## 📌 Task Manager — Priority Based Task Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 🚀 Overview
 
-## Available Scripts
+Task Manager is a smart productivity application that assigns tasks based on **priority levels** and rewards users with **higher points for completing higher-priority tasks**.
+It helps teams and individuals focus on what matters most while keeping motivation high through a point-based reward system.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* ✅ Priority Based Task Assignment (Low, Medium, High, Critical)
+* ⭐ Reward Points System (Higher priority → Higher points)
+* 📅 Task Deadline Tracking
+* 👤 User Task Dashboard
+* 📊 Productivity Monitoring
+* 🔄 Task Status Updates (Pending, In Progress, Completed)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧠 How It Works
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🎯 Priority Levels & Points
 
-### `npm run build`
+| Priority | Points Awarded |
+| -------- | -------------- |
+| Low      | 10             |
+| Medium   | 20             |
+| High     | 30             |           |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+When task done after deadline 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Priority | Points Awarded |
+| -------- | -------------- |
+| Low      | 05             |
+| Medium   | 15             |
+| High     | 20             |   
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+When a user completes a task:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+Points Earned = Task Priority Points
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🏗️ System Flow
 
-## Learn More
+1. user creates task
+2. Assigns priority level
+3. Task assigned to user
+4. User completes task
+5. Points automatically added
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🛠️ Tech Stack (Example)
 
-### Code Splitting
+* Frontend: HTML, CSS, JavaScript / React
+* Backend: Node.js / Java / Python
+* Database: MongoDB / MySQL
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ⚙️ Installation
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📊 Future Enhancements
 
-### Advanced Configuration
+* 🏆 Leaderboard System
+* 📱 Mobile App Support
+* 🤖 AI Task Recommendation
+* 📈 Analytics Dashboard
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 👨‍💻 Author
 
-### `npm run build` fails to minify
+Aayush Kumar
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
